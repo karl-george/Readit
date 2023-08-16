@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { Icons } from './Icons';
+import UserAuthForm from './UserAuthForm';
 
 const SignIn = () => {
   return (
@@ -12,6 +14,17 @@ const SignIn = () => {
         </p>
 
         {/* Sign In Form */}
+        <UserAuthForm />
+
+        <p className='px-8 text-sm text-center text-zinc-700'>
+          New to Readit?{' '}
+          <Link
+            href='/sign-up'
+            className='text-sm underline hover:text-zinc-800 underline-offset-4'
+          >
+            Sign Up
+          </Link>
+        </p>
       </div>
     </div>
   );
