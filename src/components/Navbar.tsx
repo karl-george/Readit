@@ -27,8 +27,8 @@ const Navbar = async () => {
         {user?.username ? (
           <UserAccountNav user={user} />
         ) : (
-          <Link href='/sign-in' className={buttonVariants()}>
-            Sign In
+          <Link href='/sign-up' className={buttonVariants()}>
+            Sign Up
           </Link>
         )}
       </div>
