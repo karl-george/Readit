@@ -97,7 +97,7 @@ model Post {
   authorId String
 
   comments Comment[]
-  Vote     Vote[]
+  votes    Vote[]
 }
 
 model Comment {
