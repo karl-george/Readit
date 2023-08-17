@@ -7,7 +7,7 @@ import UserAccountNav from './UserAccountNav';
 
 const Navbar = async () => {
   // const session = await getAuthSession();
-  const session = User;
+  const user = User;
 
   return (
     <div className='fixed inset-x-0 top-0 h-fit bg-zinc-100 border-b border-zinc-300 z-[10] py-2'>
@@ -23,8 +23,8 @@ const Navbar = async () => {
         {/* Searchbar */}
 
         {/* Auth */}
-        {session?.username ? (
-          <UserAccountNav />
+        {user?.username ? (
+          <UserAccountNav user={user} />
         ) : (
           <Link href='/sign-in' className={buttonVariants()}>
             Sign In
