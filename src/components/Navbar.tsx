@@ -6,8 +6,8 @@ import UserAccountNav from './UserAccountNav';
 
 const Navbar = async () => {
   // const session = await getAuthSession();
-  // const user = User;
-  const user = null;
+  const user = User;
+  // const user = null;
 
   return (
     <div className='fixed inset-x-0 top-0 h-fit bg-zinc-100 border-b border-zinc-300 z-[10] py-2'>
