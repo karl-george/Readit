@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { Icons } from './Icons';
 import { buttonVariants } from './ui/Button';
-import { getAuthSession } from '@/lib/auth';
 import User from '@/lib/usermock';
 import UserAccountNav from './UserAccountNav';
 
